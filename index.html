@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fba4b1606.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
+                <h1><span>P</span>ramod <span>T</span>hakur</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Pramod</span> <br>Thakur</h1>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+
+    <!------------- About ---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="images/user1.jpg" alt=""> -->
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="margin-top: 10px;">
+                        I'm a FullStack Developer with a passion for building beautiful and user-friendly websites. I
+                        have a strong understanding of both frontend and backend development, and I am excited to put my
+                        skills to use in a professional setting.
+                        I'm a quick learner and a team player. Let's work together to bring your ideas
+                        to life!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>HTML, CSS, Javascript</li>
+                            <li><span>Frontend Frameworks</span><br>React, Redux, Material UI, Bootstrap, SCSS</li>
+                            <li><span>Backend</span><br>Nodejs, Expressjs, MongoDB, MySQL, Restful APIs</li>
+                            <li><span>Version Control</span><br>Git, Github, BitBucket</li>
+                            <li><span>Development Tools</span><br>VsCode, Postman, Firebase </li>
+                            <li><span>Other</span><br>Agile Methodologies, RESTful APIs, AWS basics, Content Creation
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li>
+                                <span>
+                                    Content Creator - Instagram & LinkedIn
+                                </span>
+                                <br> October 2022 - September 2023
+                            </li>
+                            <p>
+                                &bull; Created and managed engaging content focused on technology, coding. Utilized
+                                multimedia tools to produce high-quality graphics, videos, and written content.
+                                <br>
+                                &bull; Skills: Strategy, social media management, Community engagement, audience
+                                building, professional networking
+                            </p>
+
+                            <li>
+                                <span>
+                                    Frontend Developer at AiThinkers
+                                </span>
+                                <br> April 2021 - June 2022
+                            </li>
+                            <p>
+                                &bull; Developed user interfaces with React and Material UI, enhancing the overall user
+                                experience.
+                                <br>
+                                &bull; Worked closely with designers and backend developers to integrate APIs and ensure
+                                seamless data flow.
+                            </p>
+
+                            <li>
+                                <span>
+                                    Fullstack Developer Intern at AiThinkers
+                                </span>
+                                <br> Dec 2021 - March 2022
+                            </li>
+                            <p>
+                                &bull; Developed and maintained responsive websites using HTML, CSS, and JavaScript.
+                                <br>
+                                &bull; Enhanced user interfaces with React and participated in agile practices.
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Amazon Builders Online Series</span>
+                                <br>&bull; Participated in a series of workshops and sessions focused on cloud
+                                computing, AWS services, and best practices
+                                <br>
+                            </li>
+                            <li>
+                                <span>Complete Fullstack Web Developer by ZeroToMastery [Udemy]</span>
+                                <br>&bull; Learned and implemented projects using HTML, CSS, JavaScript, React, Node.js,
+                                Express, and MongoDB
+                                <br>&bull; Developed a comprehensive portfolio showcasing full stack applications
+                            </li>
+                            <li>
+                                <span>Bachelor of Science - Shivaji College (Delhi University)</span>
+                                <br>&bull; October 2019 - August 2023
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------- Services ----------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>End-to-end web development services using the MERN Stack, from conceptualization and design to implementation and deployment</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Single Page Applications</h2>
+                    <p>Developing dynamic and responsive web interfaces using Reactjs, focusing on component based architecture and efficient rendering for fast and engaging user experience</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>RESTful API Development</h2>
+                    <p>Building RESTful APIs using Node.js and Express.js to facilitate communication between the frontend and backend of web applications, enabling data exchange and manipulation</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ Projects ----------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Textutils</h3>
+                        <p>TextUtils is a simple and user-friendly text manipulation webapp. It allows you to easily
+                            convert text to
+                            uppercase, lowercase, copy the text and remove spaces.
+                        </p> <br>
+                        <p>Tech Stack - React & Bootstrap</p>
+                        <a href="https://pramodthakur16.github.io/Textutils.github.io/" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Chat App</h3>
+                        <p> Chat with your friend using WeChat</p> <br>
+                        <p>Tech Stack - HTML, CSS, JavaScript & Nodejs</p>
+
+                        <a href="https://github.com/Pramodthakur16/wechat" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Friendly - Social Media App</h3>
+                        <p> It's a MERN stack project which is under progress </p>
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/Pramodthakur16" target="_blank" class="button">See More</a>
+        </div>
+    </div>
+
+    <!------------- Contact ------------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pramodthakur9991@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/pramodthakur16" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Pramodthakur16" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/smartcoders69" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://medium.com" target="_blank"><i class="fa-solid fa-feather-pointed"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="button button2"> Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fa-solid fa-heart"></i> - &#169; Pramod Thakur - All rights reserved</p>
+        </div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        //contact-form-googlesheet
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3EuGB2Q9EH9oR6g21vTld21Pk9p7i29bx_2omgsDEKPeF-QawhbqB0Wo_72gtnCnIAg/exec'
+
+        const form = document.forms['submit-to-google-sheet']
+        const message = document.getElementById("message")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    message.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        message.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                }
+                )
+                .catch(error => console.error('Error!', error.messsage))
+        })
+    </script>
+
+    <script>
+
+        // About Me tab
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        const sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = '0'
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = '-200vw'
+        }
+
+
+        //typewriter word animation
+        const typed = new Typed('#element', {
+            strings: [
+                'Coder by Day - Artist by Night <br> Blending Tech and Creativity',
+                'I\'m a Full Stack Web Developer <br>and Content Creator',
+            ],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: true,
+            cursorChar: '|',
+            startDelay: 500,
+            backDelay: 1000
+        });
+
+        
+    </script>
+</body>
+
+</html>
