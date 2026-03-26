@@ -1,489 +1,603 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9fba4b1606.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9fba4b1606.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="images/logo.png"  alt="logo" class="logo"> -->
-                <h1><span>P</span>ramod <span>T</span>hakur</h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Pramod</span> <br>Thakur</h1>
-                <span id="element"></span>
-            </div>
+      <div class="container">
+        <nav>
+          <!-- <img src="images/logo.png"  alt="logo" class="logo"> -->
+          <h1><span>P</span>ramod <span>T</span>hakur</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Pramod</span> <br />Thakur</h1>
+          <span id="element"></span>
         </div>
+      </div>
     </div>
 
     <!------------- About ---------->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <!-- <img src="images/user1.jpg" alt=""> -->
-                    <img src="images/user2.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="about-description">
-                        I'm a FullStack Developer with a passion for building beautiful, scalable, and user-friendly applications.
-                        With expertise in both frontend and backend development, I specialize in creating end-to-end solutions using modern technologies like React, React Native, NestJS, and MySQL.
-                        <br>
-                        Currently working as a Fullstack Developer at Flexypay, I'm actively contributing to both web and mobile application development.
-                        <br>
-                        I'm a quick learner, a team player, and always eager to take on new challenges. Let's work together to bring your ideas to life!
-                    </p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <!-- <img src="images/user1.jpg" alt=""> -->
+            <img src="images/user2.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-description">
+              Full Stack Engineer with experience building and scaling fintech
+              products across mobile and web platforms.
+              <br />Currently working at Flexypay, contributing to a
+              client-facing payments application used by 30K–40K users and an
+              internal operations dashboard that powers KYC, transactions,
+              settlements, and payouts. <br />Skilled in ReactJs, React Native,
+              TypeScript, and modern API-driven architectures, with a focus on
+              building secure, scalable, and maintainable systems.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span>
-                                <p>
-                                   JavaScript, TypeScript
-                                </p>
-                            </li>
-                            <li><span>Frontend Frameworks & Libraries</span>
-                                <p>
-                                    React, Redux Toolkit, React Native, Material UI, Bootstrap, SCSS
-                                </p>
-                            </li>
-                            <li><span>Backend Technologies</span>
-                                <p>
-                                    Node.js, Express.js, NestJS, MongoDB, MySQL, RESTful APIs
-                                </p>
-                            </li>
-                            <li><span>Mobile Development</span>
-                                <p>
-                                    React Native
-                                </p>
-                            </li>
-                            <li><span>Version Control</span>
-                                <p>
-                                    Git, GitHub, BitBucket
-                                </p>
-                            </li>
-                            <li><span>Development Tools</span>
-                                <p>
-                                    Docker, Postman
-                                </p>
-                            </li>
-                            <li><span>Other</span>
-                                <p>
-                                    Agile Methodologies, AWS basics, Content Creation
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li>
-                                <span>
-                                    Fullstack Developer at Flexypay
-                                </span>
-                                <br> Sept 2024 - Present
-                            </li>
-                            <p>
-                                &bull; Developing and maintaining Admin Portal website using NestJS, MySQL, React, Redux Toolkit, and Material UI
-                            </p>
-                            <p>
-                                &bull; Building scalable RESTful APIs with NestJS and implementing efficient state management with Redux Toolkit
-                            </p>
-                            <p>
-                                &bull; Contributing to React Native mobile application UI development, focusing on performance and user experience 
-                            </p>
-                            <p>
-                                &bull; Collaborating with cross-functional teams to deliver high-quality features and improvements
-                            </p>
-
-                            <li>
-                                <span>
-                                    Content Creator (Self-Employed) - Instagram & LinkedIn
-                                </span>
-                                <br> Oct 2022 - Sept 2023
-                            </li>
-                            <p>
-                                &bull; Created and published artwork-based and creative digital content with occasional content related to coding and technology
-                            </p>
-                            <p>
-                                &bull; Designed visual content using digital tools, focusing on Creativity
-                            </p>
-                            <p>
-                                &bull; Managed social media strategy and community engagement
-                            </p>
-
-                            <li>
-                                <span>
-                                    Frontend Developer at AiThinkers
-                                </span>
-                                <br> April 2022 - June 2022
-                            </li>
-                            <p>
-                                &bull; Developed and maintained scalable frontend application using React, Redux, ReactRouterDom and Material UI(MUI)
-                            </p>
-                            <p>
-                                &bull; Built responsive, mobile-first user interfaces aligned with product and UX requirements
-                            </p>
-                            <p>
-                                &bull; Integrated RESTful APIs and collaborated with backend engineers
-                            </p>
-
-                            <li>
-                                <span>
-                                    Fullstack Developer Intern at AiThinkers
-                                </span>
-                                <br> December 2021 - March 2022
-                            </li>
-                            <p>
-                                &bull; Built and enhanced responsive web applications using HTML5, CSS3, JavaScript, and React.js
-                            </p>
-                            <p>
-                                &bull; Implemented dynamic UI components using React, improving user interaction and usability
-                            </p>
-                            <p>
-                                &bull; Followed Agile/Scrum practices, participating in daily stand-ups
-                            </p>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                <span>Amazon Builders Online Series - AWS Certificate</span>
-                                <p>
-                                    &bull; Completed AWS Builders Online Series with Certificate of Attendance
-                                    <br>
-                                    &bull; Gained hands-on experience with AWS services and cloud architecture
-                                    <br>
-                                    <a href="javascript:void(0)" onclick="openCertificateModal()" class="certificate-link">
-                                        <i class="fa-solid fa-certificate"></i> View Certificate
-                                    </a>
-                                </p>
-                            </li>
-                            <li>
-                                <span>Complete Fullstack Web Developer by ZeroToMastery [Udemy]</span>
-                                <p>
-                                    &bull; Comprehensive course on modern web development (HTML, CSS, JavaScript, React, Node.js, Express, MongoDB)
-                                </p>
-                                <p>
-                                    &bull; Built real-world full stack applications and portfolio projects
-                                </p>
-                            </li>
-                            <li>
-                                <span>Bachelor of Computer Application</span>
-                                <p>
-                                    &bull; BCA - Delhi University
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-        </div>
-    </div>
 
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span>
+                  <p>JavaScript, TypeScript</p>
+                </li>
+                <li>
+                  <span>Frontend Frameworks & Libraries</span>
+                  <p>
+                    ReactJs, Redux Toolkit, React Native, Material UI,
+                    Bootstrap, SCSS
+                  </p>
+                </li>
+                <li>
+                  <span>Backend Technologies</span>
+                  <p>
+                    Node.js, Express.js, NestJS, MongoDB, MySQL, RESTful APIs
+                  </p>
+                </li>
+                <li>
+                  <span>Mobile Development</span>
+                  <p>React Native</p>
+                </li>
+                <li>
+                  <span>Version Control</span>
+                  <p>Git, GitHub, BitBucket</p>
+                </li>
+                <li>
+                  <span>Development Tools</span>
+                  <p>Docker, Postman, Jira, Figma, Confluence</p>
+                </li>
+                <li>
+                  <span>Other</span>
+                  <p>Agile Methodologies, AWS basics, Content Creation</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span> Fullstack Developer at Flexypay </span>
+                  <br />
+                  Sept 2024 - Present
+                </li>
+                <p>
+                  <strong>Flex Cards Dashboard — Admin Portal</strong>
+                </p>
+                <p>
+                  &bull; Built the end-to-end internal admin dashboard for user
+                  onboarding, KYC verification, card operations, transactions,
+                  settlements, and payouts
+                </p>
+                <p>
+                  &bull; Built high-performance data tables using MUI DataGrid
+                  with server-side pagination, filtering, and sorting to handle
+                  large datasets like transaction records and user lists
+                  smoothly.
+                </p>
+                <p>
+                  &bull; Implemented role-based access control, protected
+                  routes, and a global Axios API layer (token injection +
+                  session expiry handling) for secure, consistent app-wide
+                  behavior
+                </p>
+                <p>
+                  <strong>Flexypay Mobile App — Smart Payments Platform</strong>
+                </p>
+                <p>
+                  &bull; Developed a production fintech app serving 30K-40K
+                  active users for wallet management, payments, beneficiaries,
+                  and transaction history
+                </p>
+                <p>
+                  &bull; Built a multi-step KYC onboarding flow (Aadhaar, PAN,
+                  selfie verification) with verification-based feature unlocks
+                </p>
+                <p>
+                  &bull; Designed scalable app architecture with modular
+                  navigation (Stack + Tabs), reusable components, and Redux
+                  Toolkit-based state flow for maintainability and growth
+                </p>
+
+                <li>
+                  <span> Frontend Developer at AiThinkers </span>
+                  <br />
+                  April 2022 - June 2022
+                </li>
+                <p>
+                  &bull; Developed and maintained scalable frontend application
+                  using ReactJs, Redux, ReactRouterDom and MaterialUI (MUI)
+                </p>
+                <p>
+                  &bull; Built responsive, mobile-first user interfaces aligned
+                  with product and UX requirements
+                </p>
+                <p>
+                  &bull; Integrated RESTful APIs and collaborated with backend
+                  engineers
+                </p>
+                <p>
+                  &bull; Followed Agile/Scrum practices, participating in daily
+                  stand-ups
+                </p>
+
+                <li>
+                  <span> Fullstack Developer Intern at AiThinkers </span>
+                  <br />
+                  December 2021 - March 2022
+                </li>
+                <p>
+                  &bull; Built and enhanced responsive web applications using
+                  HTML5, CSS3, JavaScript, and React.js
+                </p>
+                <p>
+                  &bull; Implemented dynamic UI components using ReactJs,
+                  improving user interaction and usability
+                </p>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Amazon Builders Online Series - AWS Certificate</span>
+                  <p>
+                    &bull; Completed AWS Builders Online Series with Certificate
+                    of Attendance
+                    <br />
+                    &bull; Gained hands-on experience with AWS services and
+                    cloud architecture
+                    <br />
+                    <a
+                      href="javascript:void(0)"
+                      onclick="openCertificateModal()"
+                      class="certificate-link"
+                    >
+                      <i class="fa-solid fa-certificate"></i> View Certificate
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <span
+                    >Complete Fullstack Web Developer by ZeroToMastery
+                    [Udemy]</span
+                  >
+                  <p>
+                    &bull; Comprehensive course on modern web development (HTML,
+                    CSS, JavaScript, ReactJs, Node.js, Express, MongoDB)
+                  </p>
+                  <p>
+                    &bull; Built real-world full stack applications and
+                    portfolio projects
+                  </p>
+                </li>
+                <li>
+                  <span>Bachelor of Computer Application</span>
+                  <p>&bull; BCA - Delhi University</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!----------- Services ----------->
 
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Full-Stack Web Development</h2>
-                    <p>Build scalable web applications from concept to deployment using modern tech stacks (MERN, NestJS, MySQL). 
-                    Deliver production-ready solutions with clean architecture, optimized performance, and seamless user experiences.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h2>Mobile App Development</h2>
-                    <p>Develop cross-platform mobile applications using React Native. Create performant, native-like experiences 
-                    with efficient state management and modern UI/UX patterns for iOS and Android platforms.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-server"></i>
-                    <h2>Backend & API Development</h2>
-                    <p>Design and build robust RESTful APIs using NestJS, Node.js, and Express.js. Implement secure, scalable 
-                    backend systems with efficient database management (MySQL, MongoDB) and optimized data flow.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Full-Stack Web Development</h2>
+            <p>
+              Build scalable web applications from concept to deployment using
+              modern tech stacks (MERN, NestJS, MySQL). Deliver production-ready
+              solutions with clean architecture, optimized performance, and
+              seamless user experiences.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>Mobile App Development</h2>
+            <p>
+              Develop cross-platform mobile applications using React Native.
+              Create performant, native-like experiences with efficient state
+              management and modern UI/UX patterns for iOS and Android
+              platforms.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend & API Development</h2>
+            <p>
+              Design and build robust RESTful APIs using NestJS, Node.js, and
+              Express.js. Implement secure, scalable backend systems with
+              efficient database management (MySQL, MongoDB) and optimized data
+              flow.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!------------ Projects ----------->
 
     <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Admin Portal - Flexypay</h3>
-                        <p>Enterprise-level admin dashboard for managing business operations and user data</p> <br>
-                        <p><strong>Tech Stack:</strong> NestJS, MySQL, React, Redux Toolkit, Material UI</p>
-                        <div class="project-links">
-                            <a href="javascript:void(0)" onclick="openCaseStudy('admin-portal')" title="View Case Study" class="case-study-btn">
-                                <i class="fa-solid fa-file-lines"></i>
-                            </a>
-                            <a href="https://github.com/Pramodthakur16" target="_blank" title="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Crown-Clothing</h3>
-                        <p>Crown-Clothing is a simple, modern e-commerce store that makes products the central focus of the site.</p> <br>
-                        <p><strong>Tech Stack:</strong> React, ReactRouterDom, SCSS, Redux, Firebase</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Pramodthakur16/Crown-Clothing" target="_blank" title="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>TextUtils</h3>
-                        <p>Utility web application for text manipulation and formatting. Helps users quickly transform, analyze, 
-                        and format text content.</p> <br>
-                        <p><strong>Tech Stack:</strong> React, Bootstrap</p>
-                        <div class="project-links">
-                            <a href="https://pramodthakur16.github.io/Textutils.github.io/" target="_blank" title="Live Demo">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/Pramodthakur16/Textutils.github.io" target="_blank" title="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Admin Portal - Flexypay</h3>
+              <p>
+                Enterprise-level admin dashboard for managing business
+                operations and user data
+              </p>
+              <br />
+              <p>
+                <strong>Tech Stack:</strong> NestJS, MySQL, ReactJs, Redux
+                Toolkit, Material UI
+              </p>
+              <div class="project-links">
+                <a
+                  href="javascript:void(0)"
+                  onclick="openCaseStudy('admin-portal')"
+                  title="View Case Study"
+                  class="case-study-btn"
+                >
+                  <i class="fa-solid fa-file-lines"></i>
+                </a>
+                <a
+                  href="https://github.com/Pramodthakur16"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
-
-            <a href="https://github.com/Pramodthakur16" target="_blank" class="button">See More</a>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Crown-Clothing</h3>
+              <p>
+                Crown-Clothing is a simple, modern e-commerce store that makes
+                products the central focus of the site.
+              </p>
+              <br />
+              <p>
+                <strong>Tech Stack:</strong> ReactJs, ReactRouterDom, SCSS,
+                Redux, Firebase
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Pramodthakur16/Crown-Clothing"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>TextUtils</h3>
+              <p>
+                Utility web application for text manipulation and formatting.
+                Helps users quickly transform, analyze, and format text content.
+              </p>
+              <br />
+              <p><strong>Tech Stack:</strong> ReactJs, Bootstrap</p>
+              <div class="project-links">
+                <a
+                  href="https://pramodthakur16.github.io/Textutils.github.io/"
+                  target="_blank"
+                  title="Live Demo"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+                <a
+                  href="https://github.com/Pramodthakur16/Textutils.github.io"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <a
+          href="https://github.com/Pramodthakur16"
+          target="_blank"
+          class="button"
+          >See More</a
+        >
+      </div>
     </div>
 
     <!------------- Contact ------------>
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>pramodthakur9991@gmail.com</p>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/pramodthakur16" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Pramodthakur16" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/@pramodthakur9991" target="_blank"><i class="fa-solid fa-feather-pointed"></i></a>
-                    </div>
-                    <a href="images/Pramod_Resume.pdf" download class="button button2"> Download CV</a>
-                </div>
-
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="button button2">Submit</button>
-                    </form>
-                    <span id="message"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>pramodthakur9991@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/pramodthakur16" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Pramodthakur16" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://medium.com/@pramodthakur9991" target="_blank"
+                ><i class="fa-solid fa-feather-pointed"></i
+              ></a>
             </div>
+            <a href="images/Pramod_Resume.pdf" download class="button button2">
+              Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="button button2">Submit</button>
+            </form>
+            <span id="message"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p> &#169; Pramod Thakur - All rights reserved</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>&#169; Pramod Thakur - All rights reserved</p>
+      </div>
     </div>
 
     <!-- Certificate Modal -->
     <div id="certificateModal" class="certificate-modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeCertificateModal()">&times;</span>
-            <img src="images/AWS.png" alt="AWS Certificate" class="certificate-image">
-        </div>
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeCertificateModal()"
+          >&times;</span
+        >
+        <img
+          src="images/AWS.png"
+          alt="AWS Certificate"
+          class="certificate-image"
+        />
+      </div>
     </div>
 
     <!-- Case Study Modal -->
     <div id="caseStudyModal" class="case-study-modal">
-        <div class="case-study-content">
-            <span class="close-case-study" onclick="closeCaseStudy()">&times;</span>
-            <div id="caseStudyBody" class="case-study-body">
-                <!-- Case study content will be inserted here -->
-            </div>
+      <div class="case-study-content">
+        <span class="close-case-study" onclick="closeCaseStudy()">&times;</span>
+        <div id="caseStudyBody" class="case-study-body">
+          <!-- Case study content will be inserted here -->
         </div>
+      </div>
     </div>
 
     <!-- <script src="script.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        //contact-form-googlesheet
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3EuGB2Q9EH9oR6g21vTld21Pk9p7i29bx_2omgsDEKPeF-QawhbqB0Wo_72gtnCnIAg/exec'
+      //contact-form-googlesheet
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz3EuGB2Q9EH9oR6g21vTld21Pk9p7i29bx_2omgsDEKPeF-QawhbqB0Wo_72gtnCnIAg/exec";
 
-        const form = document.forms['submit-to-google-sheet']
-        const message = document.getElementById("message")
+      const form = document.forms["submit-to-google-sheet"];
+      const message = document.getElementById("message");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    message.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        message.innerHTML = ""
-                    }, 3000)
-                    form.reset()
-                }
-                )
-                .catch(error => console.error('Error!', error.messsage))
-        })
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            message.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              message.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.messsage));
+      });
     </script>
 
     <script>
+      // About Me tab
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
 
-        // About Me tab
-        let tablinks = document.getElementsByClassName("tab-links");
-        let tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link")
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-
-        const sidemenu = document.getElementById("sidemenu");
-
-        function openMenu() {
-            sidemenu.style.right = '0'
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
 
-        function closeMenu() {
-            sidemenu.style.right = '-200vw'
+      const sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sidemenu.style.right = "-200vw";
+      }
+
+      //typewriter word animation
+      const typed = new Typed("#element", {
+        strings: [
+          "Coder by Day - Artist by Night <br> Blending Tech and Creativity",
+          "I'm a Full Stack Web Developer <br>and Content Creator",
+          "based in Delhi, India",
+        ],
+        typeSpeed: 50,
+        backSpeed: 20,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: true,
+        cursorChar: "|",
+        startDelay: 500,
+        backDelay: 1000,
+      });
+
+      // Certificate Modal Functions
+      function openCertificateModal() {
+        document.getElementById("certificateModal").style.display = "flex";
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
+      }
+
+      function closeCertificateModal() {
+        document.getElementById("certificateModal").style.display = "none";
+        document.body.style.overflow = "auto"; // Restore scrolling
+      }
+
+      // Close modals when clicking outside
+      window.onclick = function (event) {
+        const certModal = document.getElementById("certificateModal");
+        const caseModal = document.getElementById("caseStudyModal");
+        if (event.target === certModal) {
+          closeCertificateModal();
         }
-
-
-        //typewriter word animation
-        const typed = new Typed('#element', {
-            strings: [
-                'Coder by Day - Artist by Night <br> Blending Tech and Creativity',
-                'I\'m a Full Stack Web Developer <br>and Content Creator',
-                'based in Delhi, India',
-            ],
-            typeSpeed: 50,
-            backSpeed: 20,
-            loop: true,
-            loopCount: Infinity,
-            showCursor: true,
-            cursorChar: '|',
-            startDelay: 500,
-            backDelay: 1000
-        });
-
-        // Certificate Modal Functions
-        function openCertificateModal() {
-            document.getElementById('certificateModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        if (event.target === caseModal) {
+          closeCaseStudy();
         }
+      };
 
-        function closeCertificateModal() {
-            document.getElementById('certificateModal').style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeCertificateModal();
+          closeCaseStudy();
         }
+      });
 
-        // Close modals when clicking outside
-        window.onclick = function(event) {
-            const certModal = document.getElementById('certificateModal');
-            const caseModal = document.getElementById('caseStudyModal');
-            if (event.target === certModal) {
-                closeCertificateModal();
-            }
-            if (event.target === caseModal) {
-                closeCaseStudy();
-            }
-        }
+      // Case Study Data
+      const caseStudies = {
+        "admin-portal": {
+          title: "Admin Portal - Flexypay",
+          overview:
+            "Enterprise-level admin dashboard for managing business operations, user data, and system configurations.",
+          challenge:
+            "Flexypay needed a comprehensive admin dashboard to manage thousands of user accounts, monitor real-time system performance, control role-based access, and handle complex data operations efficiently. The system needed to handle high traffic, provide secure authentication, and integrate with existing payment infrastructure.",
+          approach:
+            "NestJS for its modular architecture and TypeScript support, MySQL for ACID compliance and reliability, React with Redux Toolkit for predictable state management, and Material UI for consistent design. Implemented modular backend structure, RESTful API design, and reusable UI components.",
+          features: [
+            "Role-Based Access Control (RBAC) with different permission levels",
+            "Real-time data management with live updates",
+            "Analytics dashboard with visual charts and custom filters",
+            "User management system with CRUD operations and bulk actions",
+          ],
+          challenges: [
+            {
+              problem:
+                "Performance with large datasets causing slow page loads",
+              solution:
+                "Implemented pagination, lazy loading, database indexing, and React.memo() optimization",
+              result: "Reduced load time",
+            },
+            {
+              problem: "Real-time updates without page refresh",
+              solution:
+                "Redux Toolkit for state management, and optimistic updates",
+              result: "Real-time updates",
+            },
+          ],
+          results: [
+            "Page load time reduced by 70-80%",
+            "Handles 20,000+ concurrent users",
+          ],
+          techStack: [
+            "NestJS",
+            "MySQL",
+            "React",
+            "Redux Toolkit",
+            "Material UI",
+            "JWT",
+          ],
+        },
+      };
 
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeCertificateModal();
-                closeCaseStudy();
-            }
-        });
+      // Case Study Modal Functions
+      function openCaseStudy(studyId) {
+        const study = caseStudies[studyId];
+        if (!study) return;
 
-        // Case Study Data
-        const caseStudies = {
-            'admin-portal': {
-                title: 'Admin Portal - Flexypay',
-                overview: 'Enterprise-level admin dashboard for managing business operations, user data, and system configurations.',
-                challenge: 'Flexypay needed a comprehensive admin dashboard to manage thousands of user accounts, monitor real-time system performance, control role-based access, and handle complex data operations efficiently. The system needed to handle high traffic, provide secure authentication, and integrate with existing payment infrastructure.',
-                approach: 'NestJS for its modular architecture and TypeScript support, MySQL for ACID compliance and reliability, React with Redux Toolkit for predictable state management, and Material UI for consistent design. Implemented modular backend structure, RESTful API design, and reusable UI components.',
-                features: [
-                    'Role-Based Access Control (RBAC) with different permission levels',
-                    'Real-time data management with live updates',
-                    'Analytics dashboard with visual charts and custom filters',
-                    'User management system with CRUD operations and bulk actions'
-                ],
-                challenges: [
-                    {
-                        problem: 'Performance with large datasets causing slow page loads',
-                        solution: 'Implemented pagination, lazy loading, database indexing, and React.memo() optimization',
-                        result: 'Reduced load time'
-                    },
-                    {
-                        problem: 'Real-time updates without page refresh',
-                        solution: 'Redux Toolkit for state management, and optimistic updates',
-                        result: 'Real-time updates'
-                    }
-                ],
-                results: [
-                    'Page load time reduced by 70-80%',
-                    'Handles 20,000+ concurrent users',
-                ],
-                techStack: ['NestJS', 'MySQL', 'React', 'Redux Toolkit', 'Material UI', 'JWT']
-            }
-        };
-
-        // Case Study Modal Functions
-        function openCaseStudy(studyId) {
-            const study = caseStudies[studyId];
-            if (!study) return;
-
-            const body = document.getElementById('caseStudyBody');
-            body.innerHTML = `
+        const body = document.getElementById("caseStudyBody");
+        body.innerHTML = `
                 <h2>${study.title}</h2>
                 
                 <div class="case-study-section">
@@ -504,48 +618,48 @@
                 <div class="case-study-section">
                     <h3><i class="fa-solid fa-star"></i> Key Features</h3>
                     <ul>
-                        ${study.features.map(feature => `<li>${feature}</li>`).join('')}
+                        ${study.features.map((feature) => `<li>${feature}</li>`).join("")}
                     </ul>
                 </div>
 
                 <div class="case-study-section">
                     <h3><i class="fa-solid fa-puzzle-piece"></i> Challenges & Solutions</h3>
-                    ${study.challenges.map(challenge => `
+                    ${study.challenges
+                      .map(
+                        (challenge) => `
                         <div class="challenge-item">
                             <p><strong>Problem:</strong> ${challenge.problem}</p>
                             <p><strong>Solution:</strong> ${challenge.solution}</p>
                             <p class="result"><strong>Result:</strong> ${challenge.result}</p>
                         </div>
-                    `).join('')}
+                    `,
+                      )
+                      .join("")}
                 </div>
 
                 <div class="case-study-section">
                     <h3><i class="fa-solid fa-chart-line"></i> Results & Impact</h3>
                     <ul class="results-list">
-                        ${study.results.map(result => `<li><i class="fa-solid fa-check"></i> ${result}</li>`).join('')}
+                        ${study.results.map((result) => `<li><i class="fa-solid fa-check"></i> ${result}</li>`).join("")}
                     </ul>
                 </div>
 
                 <div class="case-study-section">
                     <h3><i class="fa-solid fa-code"></i> Technologies Used</h3>
                     <div class="tech-tags">
-                        ${study.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                        ${study.techStack.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
                     </div>
                 </div>
             `;
 
-            document.getElementById('caseStudyModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
+        document.getElementById("caseStudyModal").style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
 
-        function closeCaseStudy() {
-            document.getElementById('caseStudyModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-
-
+      function closeCaseStudy() {
+        document.getElementById("caseStudyModal").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
     </script>
-</body>
-
+  </body>
 </html>
